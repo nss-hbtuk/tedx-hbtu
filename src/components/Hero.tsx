@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { CalendarDays, MapPin } from "lucide-react";
 
@@ -14,14 +13,38 @@ const Hero = () => {
         <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-red-600/10 rounded-full blur-2xl animate-pulse delay-1000" />
       </div>
       
-      {/* HBTU Logo placeholder */}
-      <div className="absolute top-8 left-8 w-16 h-16 bg-white/10 rounded-lg flex items-center justify-center backdrop-blur-sm border border-white/20">
-        <span className="text-white text-xs font-bold">HBTU</span>
+      {/* HBTU Logo */}
+      <div className="absolute top-8 left-8 w-24 h-32 bg-white/10 rounded-lg flex items-center justify-center backdrop-blur-sm border border-white/20 overflow-hidden">
+        <img 
+          src="/hbtu-logo.png" 
+          alt="HBTU Logo" 
+          className="w-full h-full object-contain"
+          onError={(e) => {
+            // Fallback to text if image fails to load
+            const target = e.currentTarget as HTMLImageElement;
+            target.style.display = 'none';
+            const fallback = target.nextElementSibling as HTMLElement;
+            if (fallback) fallback.style.display = 'flex';
+          }}
+        />
+        <span className="text-white text-sm font-bold hidden">HBTU</span>
       </div>
       
-      {/* NSS HBTU Logo placeholder */}
-      <div className="absolute top-8 right-8 w-16 h-16 bg-red-600/20 rounded-lg flex items-center justify-center backdrop-blur-sm border border-red-600/40">
-        <span className="text-white text-xs font-bold">NSS</span>
+      {/* NSS HBTU Logo */}
+      <div className="absolute top-8 right-8 w-20 h-20 bg-red-600/20 rounded-lg flex items-center justify-center backdrop-blur-sm border border-red-600/40 overflow-hidden">
+        <img 
+          src="/nss-logo.png" 
+          alt="NSS HBTU Logo" 
+          className="w-full h-full object-contain"
+          onError={(e) => {
+            // Fallback to text if image fails to load
+            const target = e.currentTarget as HTMLImageElement;
+            target.style.display = 'none';
+            const fallback = target.nextElementSibling as HTMLElement;
+            if (fallback) fallback.style.display = 'flex';
+          }}
+        />
+        <span className="text-white text-sm font-bold hidden">NSS</span>
       </div>
       
       <div className="relative z-10 text-center max-w-5xl mx-auto px-6">
