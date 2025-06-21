@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { CalendarDays, MapPin } from "lucide-react";
 
@@ -58,7 +57,7 @@ const Hero = () => {
           <Button 
             variant="outline" 
             size="lg" 
-            className="border-white text-white hover:bg-white hover:text-black px-8 py-4 text-lg font-semibold transition-all duration-300"
+            className="border-white text-white hover:bg-white/10 hover:text-white px-8 py-4 text-lg font-semibold transition-all duration-300"
           >
             Learn More
           </Button>
