@@ -16,7 +16,7 @@ const Hero = () => {
       {/* HBTU Logo */}
       <div className="absolute top-8 left-8 w-24 h-32 bg-white/10 rounded-lg flex items-center justify-center backdrop-blur-sm border border-white/20 overflow-hidden">
         <img 
-          src="/hbtu-logo.png" 
+          src="hbtu-logo.png" 
           alt="HBTU Logo" 
           className="w-full h-full object-contain"
           onError={(e) => {
@@ -33,7 +33,7 @@ const Hero = () => {
       {/* NSS HBTU Logo */}
       <div className="absolute top-8 right-8 w-20 h-20 bg-red-600/20 rounded-lg flex items-center justify-center backdrop-blur-sm border border-red-600/40 overflow-hidden">
         <img 
-          src="/nss-logo.png" 
+          src="nss-logo.png" 
           alt="NSS HBTU Logo" 
           className="w-full h-full object-contain"
           onError={(e) => {
