@@ -19,6 +19,11 @@ const Hero = () => {
         <span className="text-white text-xs font-bold">HBTU</span>
       </div>
       
+      {/* NSS HBTU Logo placeholder */}
+      <div className="absolute top-8 right-8 w-16 h-16 bg-red-600/20 rounded-lg flex items-center justify-center backdrop-blur-sm border border-red-600/40">
+        <span className="text-white text-xs font-bold">NSS</span>
+      </div>
+      
       <div className="relative z-10 text-center max-w-5xl mx-auto px-6">
         <div className="mb-8">
           <h1 className="text-7xl md:text-9xl font-bold mb-6">
